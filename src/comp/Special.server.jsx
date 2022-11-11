@@ -8,7 +8,7 @@ const Special = () => {
       button="Discover"
       image={'../src/assets/4RXL.png'}
       reversed
-      ImageWidth={'w-1/2'}
+      ImageWidth={'md:w-1/2 '}
     />
   );
 };
