@@ -20,7 +20,7 @@ export default function TwoCol({
         alt=""
       />
 
-      <div className="flex  flex-3 justify-center flex-col gap-8 p-10   md:px-20 ">
+      <div className="flex  flex-3 justify-center text-center md:text-left md:items-start items-center flex-col gap-8 p-10   md:px-20 ">
         <h1 className="text-4xl lg:text-6xl  text-brand-500 font-pinyon ">
           {title}
         </h1>
