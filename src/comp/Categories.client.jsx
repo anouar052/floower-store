@@ -1,4 +1,4 @@
-import { Image } from '@shopify/hydrogen';
+import { Image, Link } from '@shopify/hydrogen';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -44,20 +44,28 @@ const Categories = ({ collections }) => {
       >
         {collections.map((collection) => {
           return (
-            <SwiperSlide
-              key={collection.id}
-              className="flex gap-4 flex-col justify-center h-32 max-w-1/2 items-center "
-            >
-              {collection.image ? (
-                <Image
-                  className="w-2/3 rounded-lg min-h-[300px] aspect-ratio-2/3"
-                  alt="collection image"
-                  width={350}
-                  height={430}
-                  data={collection.image}
-                />
-              ) : null}
-              <h4 className="font-bold mb-8 text-2xl">{collection.title}</h4>
+            <SwiperSlide key={collection.id}>
+              <Link
+                className="flex gap-4 flex-col justify-center  max-w-1/2 items-center "
+                to={`/collections/${collection.handle}`}
+              >
+                {collection.image ? (
+                  <Image
+                    className=" rounded-lg  aspect-4/5 "
+                    alt="collection image"
+                    data={collection.image}
+                    widths={[320]}
+                    sizes="320px"
+                    loaderOptions={{
+                      crop: 'center',
+                      scale: 1,
+                      width: 320,
+                      height: 400,
+                    }}
+                  />
+                ) : null}
+                <h4 className="font-bold mb-8 text-2xl">{collection.title}</h4>
+              </Link>
             </SwiperSlide>
           );
         })}
