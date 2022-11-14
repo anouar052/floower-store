@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         pinyon: 'Pinyon Script',
         poppins: 'Poppins',
+        italiana: 'Italiana',
       },
       colors: {
         brand: { 400: '#D3AF37', 500: '#8C7521' },
