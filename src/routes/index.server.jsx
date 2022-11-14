@@ -5,6 +5,7 @@ import TabsSection from '../comp/TabsSection.server';
 import { useShopQuery, gql } from '@shopify/hydrogen';
 import Categories from '../comp/Categories.client';
 import { Layout } from '../comp/Layout.server';
+import Features from '../comp/Features.server';
 
 export default function Home() {
   const {
@@ -16,8 +17,8 @@ export default function Home() {
     <>
       {/* <Layout> */}
       <Hero />
-      <Special />
       <Categories collections={collections.nodes} />
+      <Special />
       <LastSection />
       {/* <TabsSection collections={collections.nodes} /> */}
       {/* </Layout> */}

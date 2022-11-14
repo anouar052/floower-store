@@ -1,6 +1,7 @@
 import { gql, useRouteParams, useShopQuery } from '@shopify/hydrogen';
 import ProductDetails from '../../comp/ProductDetails.client';
 import { Suspense } from 'react';
+import Features from '../../comp/Features.server';
 
 export default function Product() {
   const { handle } = useRouteParams();
@@ -15,7 +16,8 @@ export default function Product() {
 
   return (
     <Suspense>
-      <ProductDetails product={product} />;
+      <ProductDetails product={product} />
+      <Features />
     </Suspense>
   );
 }

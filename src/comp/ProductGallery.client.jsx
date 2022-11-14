@@ -11,11 +11,12 @@ export default function ProductGallery({ media }) {
   return (
     <div className=" md:p-20 md:pr-0 ">
       <Image
-        className={`w-full  aspect-square object-cover`}
+        className={`w-full  aspect-square object-cover select-none`}
         data={selectedImage}
         options={{
           crop: 'center',
         }}
+        alt="selected image"
       />
 
       <div className={`  flex-wrap md:p-0 w-full flex`}>

@@ -23,8 +23,11 @@ export default function ProductDetails({ product }) {
             </div>
             <ProductForm product={product} />
             <div className="mt-8">
+              <span className="text-lg font-bold font-poppins">
+                Description:
+              </span>
               <div
-                className="prose border-t border-gray-200 pt-6 text-black text-md"
+                className="prose  pt-2 text-black text-md"
                 dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
               ></div>
             </div>
