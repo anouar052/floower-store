@@ -6,7 +6,7 @@ const Special = () => {
       title="What Special about Us"
       parag="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua  Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       button="Discover"
-      image={'../src/assets/1.png'}
+      image={'/assets/1.png'}
       reversed
       ImageWidth={'md:w-1/2 '}
     />

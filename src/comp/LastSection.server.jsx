@@ -15,12 +15,12 @@ const LastSection = () => {
       </button>
       <img
         className="absolute md:w-1/4 w-1/2 lg:-bottom-20 md:bottom-10 bottom-40  right-0 z-10"
-        src="../src/assets/4RN.png"
+        src="/assets/4RN.png"
         alt=""
       />
       <img
         className="absolute md:w-1/3 w-2/3 lg:-bottom-[10em] bottom-0 left-0 -z-1"
-        src="../src/assets/4RN-1.png"
+        src="/assets/4RN-1.png"
         alt=""
       />
     </section>
