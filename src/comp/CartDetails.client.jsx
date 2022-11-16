@@ -19,7 +19,7 @@ export function CartDetails({ onClose }) {
   }
 
   return (
-    <form className="grid grid-cols-1 grid-rows-[1fr_auto] h-[calc(100vh-6rem)]">
+    <form className="grid grid-cols-1 grid-rows-[1fr_auto] h-[calc(100vh-6rem)] ">
       <section
         aria-labelledby="cart-contents"
         className="px-4 pb-4 overflow-auto transition md:px-12"
@@ -41,8 +41,10 @@ export function CartDetails({ onClose }) {
         <h2 id="summary-heading" className="sr-only">
           Order summary
         </h2>
-        <OrderSummary />
-        <CartCheckoutActions />
+        <div className="overflow-y-auto ">
+          <OrderSummary />
+          <CartCheckoutActions />
+        </div>
       </section>
     </form>
   );
