@@ -14,7 +14,7 @@ import {
 
 const Categories = ({ collections }) => {
   return (
-    <section className="w-full min-h-[100vh] flex flex-col justify-center px-8  md:px-20 lg:px-16">
+    <section className="w-full min-h-[100vh] bg-white flex flex-col justify-center px-8  md:px-20 lg:px-16">
       <h2 className="relative  text-5xl text-center md:text-left lg:text-7xl mb-20 z-30 font-bold underline decoration-brand-400 decoration-8">
         CATEGORIES
       </h2>

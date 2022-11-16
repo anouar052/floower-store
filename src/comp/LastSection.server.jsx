@@ -1,6 +1,6 @@
 const LastSection = () => {
   return (
-    <section className="flex flex-col w-full mb-32 lg:h-screen md:h-[60vh] h-screen py-20 gap-4 items-center relative  ">
+    <section className="flex flex-col bg-white w-full mb-32 lg:h-screen md:h-[60vh] h-screen py-20 gap-4 items-center relative  ">
       <h2 className="text-4xl text-center lg:text-6xl  text-brand-500 font-pinyon z-20">
         Enjoy your flowers, For a Really long time Now
       </h2>

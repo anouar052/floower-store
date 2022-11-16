@@ -4,7 +4,6 @@ import Special from '../comp/Special.server';
 import TabsSection from '../comp/TabsSection.server';
 import { useShopQuery, gql } from '@shopify/hydrogen';
 import Categories from '../comp/Categories.client';
-import { Layout } from '../comp/Layout.server';
 import Features from '../comp/Features.server';
 
 export default function Home() {
@@ -15,13 +14,11 @@ export default function Home() {
   });
   return (
     <>
-      {/* <Layout> */}
       <Hero />
       <Categories collections={collections.nodes} />
       <Special />
       <LastSection />
       {/* <TabsSection collections={collections.nodes} /> */}
-      {/* </Layout> */}
     </>
   );
 }
