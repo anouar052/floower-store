@@ -98,7 +98,7 @@ const Footer = ({ shopName }) => {
           <ul className="flex flex-col gap-3 items-center md:items-start text-brand-400 ">
             {policies.map((policy) => {
               return (
-                <li>
+                <li key={policy.title}>
                   <Link to={policy.url}>{policy.title}</Link>
                 </li>
               );
