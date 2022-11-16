@@ -36,7 +36,7 @@ export function CartDetails({ onClose }) {
       </section>
       <section
         aria-labelledby="summary-heading"
-        className="p-4 border-t md:px-12"
+        className="p-4 border-t overflow-y-auto md:px-12"
       >
         <h2 id="summary-heading" className="sr-only">
           Order summary
